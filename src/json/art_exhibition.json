@@ -4,53 +4,80 @@
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3967573_28.jpg",
       "first_name": "(Phoenix) Feifan",
       "last_name": "Gao",
-      "link": ""
-    },{
+      "url": "phoenix",
+      "photos": ["https://dummyimage.com/1920x1080/000/fff","https://dummyimage.com/1920x1080/000/fff"]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4348773_304.jpg",
       "first_name": "Tanya",
       "last_name": "Henderson",
-      "link": ""
-    },{
+      "url": "tanya",
+      "photos": ["https://dummyimage.com/1320x880/000/fff","https://dummyimage.com/1920x1080/000/fff"
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4898005_941.jpg",
       "first_name": "(Kasia) Katarzyna",
       "last_name": "Kubrak",
-      "link": ""
-    },{
+      "url": "kasia",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3919069_938.jpg",
       "first_name": "(Jason) Muzhi",
       "last_name": "Li",
-      "link": ""
-    },{
+      "url": "jason",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4772770_564.jpg",
       "first_name": "Manuella",
       "last_name": "Tona",
-      "link": ""
-    },{
+      "url": "manuella",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4840946_82.jpg",
       "first_name": "(Todun) Oluwaseyitodun",
       "last_name": "Akinyelure",
-      "link": ""
-    },{
+      "url": "todun",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4542206_964.jpg",
       "first_name": "Alisa",
       "last_name": "Martsynkevich",
-      "link": ""
-    },{
+      "url": "alisa",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4840960_689.jpg",
       "first_name": "(Alex) Mario",
       "last_name": "Vera Esparza",
-      "link": ""
-    }, {
+      "url": "alex",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3935606_503.jpg",
       "first_name": "Amelia",
       "last_name": "Winterbottom",
-      "link": ""
-    }
-    ,{
+      "url": "amelia",
+      "photos": [
+      ]
+    },
+    {
       "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3848470_997.jpg",
       "first_name": "(Kevin) Guangyu",
       "last_name": "Zhang",
-      "link": ""
+      "url": "kevin",
+      "photos": [
+      ]
     }
   ]
 }

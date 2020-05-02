@@ -1,19 +1,20 @@
 <template>
     <div>
-        <br>
         <h1>IB Visual Art Galleries</h1>
         <b-container deck class="card_container">
             <b-row :cols="this.cols">
                 <b-card v-bind:key="artist.image" :img-src="artist.image" img-alt="Card image" v-for="artist in artists"
                         class="artist_card mx-auto h-100"
                         img-top>
-                    <b-card-text class="card_text">
-                        <div style="text-align: center; vertical-align: center;">
-                            <p class="names">
-                                {{artist.first_name}} {{artist.last_name}}
-                            </p>
-                        </div>
-                    </b-card-text>
+                    <router-link :to="'art_exhibition/'+artist.url">
+                        <b-card-text class="card_text">
+                            <div style="text-align: center; vertical-align: center;">
+                                <p class="names">
+                                    {{artist.first_name}} {{artist.last_name}}
+                                </p>
+                            </div>
+                        </b-card-text>
+                    </router-link>
                 </b-card>
             </b-row>
         </b-container>

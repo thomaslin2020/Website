@@ -1,4 +1,4 @@
-# machine_learning
+# Ridley Arts Celebration
 
 ## Project setup
 ```

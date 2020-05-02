@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// import '@babel/polyfill'
 import './plugins/boostrap-vue'
-// import VueWindowSize from 'vue-window-size';
+import VueAgile from 'vue-agile'
+import VS2 from 'vue-script2'
 
-// Vue.use(VueWindowSize);
+Vue.use(VS2)
+Vue.use(VueAgile)
 Vue.config.productionTip = false
 
 new Vue({
