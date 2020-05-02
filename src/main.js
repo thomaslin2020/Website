@@ -4,6 +4,8 @@ import router from './router'
 import './plugins/boostrap-vue'
 import VueAgile from 'vue-agile'
 import VS2 from 'vue-script2'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 Vue.use(VS2)
 Vue.use(VueAgile)

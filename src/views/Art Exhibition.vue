@@ -10,7 +10,7 @@
                         <b-card-text class="card_text">
                             <div style="text-align: center; vertical-align: center;">
                                 <p class="names">
-                                    {{artist.first_name}} {{artist.last_name}}
+                                    <b>{{artist.first_name}} {{artist.last_name}}</b>
                                 </p>
                             </div>
                         </b-card-text>
