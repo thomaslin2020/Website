@@ -1,8 +1,25 @@
 <template>
     <div>
-        <h1>
-            {{capitalize(artist_name)}}'s Art Gallery
-        </h1>
+        <div class="bar" style="display: flex;">
+            <div id="left">
+                <router-link :to="'/art_exhibition/'+indices[0]">
+                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[0])}}'s Art</b>
+                    </b-button>
+                </router-link>
+            </div>
+            <div id="middle">
+                <h1>
+                    {{capitalize(artist_name)}}'s Art Gallery
+                </h1>
+            </div>
+            <div id="right">
+                <router-link :to="'/art_exhibition/'+indices[1]">
+                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[1])}}'s Art</b>
+                    </b-button>
+                </router-link>
+            </div>
+        </div>
+        <!--        {{artist_names}}-->
         <div class="artist-images">
             <Photos :photos="photos"/>
         </div>
@@ -20,15 +37,40 @@
         data() {
             return {
                 artist_name: this.$route.params.name,
-                photos: items.artists.find(m => m.url === this.$route.params.name).photos
+                photos: items.artists.find(m => m.url === this.$route.params.name).photos,
+                artist_names: this.get_artist_names(),
+                indices: this.get_indices()
             }
         },
         methods: {
             capitalize: function (input) {
                 return input[0].toUpperCase() + input.slice(1)
             },
-            print_: function(input){
+            print_: function (input) {
                 console.log(input)
+            },
+            get_artist_names: function () {
+                let names = []
+                for (let i = 0; i < items.artists.length; i++) {
+                    names.push(items.artists[i].url)
+                }
+                return names
+            },
+            mod: function (n, m) {
+                return ((n % m) + m) % m;
+            },
+            reload: function () {
+                setTimeout(function () {
+                    window.location.reload()
+                }, 100)
+            },
+            get_indices: function () {
+                let indices = []
+                let names = this.get_artist_names()
+                let index = names.findIndex(name => name === this.$route.params.name)
+                indices.push(names[this.mod(index - 1, names.length)])
+                indices.push(names[this.mod(index + 1, names.length)])
+                return indices
             }
         },
         computed: {}
@@ -39,5 +81,27 @@
     h1 {
         font-size: 32px;
         margin: 0;
+    }
+
+    .pagination-button {
+        border-radius: 10%;
+        color: #E6611B;
+        border-width: 2px;
+        border-color: #E6611B;
+    }
+
+    #left {
+        float: left;
+        width: 25%;
+    }
+
+    #middle {
+        float: left;
+        width: 50%;
+    }
+
+    #right {
+        float: right;
+        width: 25%;
     }
 </style>
