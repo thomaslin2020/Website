@@ -1,15 +1,14 @@
-<template lang="pug">
-    main.main
-        Photos
+<template>
+    <main class="main">
+
+    </main>
 </template>
 
 <script>
-    import Photos from "../components/Photos";
 
     export default {
         name: 'Home',
         components: {
-            Photos,
         }
     }
 </script>
