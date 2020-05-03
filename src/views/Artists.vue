@@ -39,8 +39,6 @@
         components: {Photos},
         data() {
             return {
-                repository: "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/",
-                folder: "src/assets/art_exhibition/",
                 artist_name: this.$route.params.name,
                 photos: this.get_photos(),
                 artist_names: this.get_artist_names(),
@@ -78,11 +76,13 @@
                 return indices
             },
             get_photos: function () {
-                let p = items.artists.find(m => m.url === this.$route.params.name).photos
-                for (let i = 0; i < p.length; i++) {
-                    p[i] = this.repository + this.folder + this.$route.params.name + '/' + p[i]
+                if (items.artists.find(m => m.url === this.$route.params.name) !== undefined) {
+                    let p = items.artists.find(m => m.url === this.$route.params.name).photos
+                    for (let i = 0; i < p.length; i++) {
+                        p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/" + this.$route.params.name + '/' + p[i]
+                    }
+                    return p
                 }
-                return p
             },
             // computed: {}
         }
