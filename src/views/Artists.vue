@@ -80,7 +80,7 @@
             get_photos: function () {
                 let p = items.artists.find(m => m.url === this.$route.params.name).photos
                 for (let i = 0; i < p.length; i++) {
-                    p[i] = this.repository + this.folder + this.$route.params.name + p[i]
+                    p[i] = this.repository + this.folder + this.$route.params.name + '/' + p[i]
                 }
                 return p
             },
