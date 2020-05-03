@@ -65,7 +65,7 @@
 
                 button
                     background-color: transparent
-                    border: 1px solid #fff
+                    border: 1px solid #E6611B
                     border-radius: 50%
                     cursor: pointer
                     display: block
@@ -80,7 +80,7 @@
                 &--current,
                 &:hover
                     button
-                        background-color: #fff
+                        background-color: #E6611B
 
             // Slides styles
             .slide
