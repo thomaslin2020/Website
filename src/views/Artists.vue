@@ -3,8 +3,8 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <router-link :to="'/art_exhibition/'+indices[0]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[0])}}'s
-                        Art</b>
+                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"> <b>{{capitalize(indices[0])}}'s
+                        Art</b></p>
                     </b-button>
                 </router-link>
             </div>
@@ -15,8 +15,10 @@
             </div>
             <div id="right">
                 <router-link :to="'/art_exhibition/'+indices[1]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[1])}}'s
-                        Art</b>
+                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
+                        <b>{{capitalize(indices[1])}}'s
+                            Art</b>
+                    </p>
                     </b-button>
                 </router-link>
             </div>
@@ -87,6 +89,9 @@
     h1 {
         font-size: 32px;
         margin: 0;
+    }
+    .text{
+        font-family: "Goudy Old Style", serif;
     }
 
     .pagination-button {

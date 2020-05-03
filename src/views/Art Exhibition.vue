@@ -97,6 +97,6 @@
     .names {
         margin: auto;
         vertical-align: middle;
-        font-size: 12px;
+        font-size: 13.3px;
     }
 </style>
