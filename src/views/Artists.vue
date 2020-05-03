@@ -3,7 +3,8 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <router-link :to="'/art_exhibition/'+indices[0]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[0])}}'s Art</b>
+                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[0])}}'s
+                        Art</b>
                     </b-button>
                 </router-link>
             </div>
@@ -14,7 +15,8 @@
             </div>
             <div id="right">
                 <router-link :to="'/art_exhibition/'+indices[1]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[1])}}'s Art</b>
+                    <b-button variant="outline" class="pagination-button" @click="reload"><b>{{capitalize(indices[1])}}'s
+                        Art</b>
                     </b-button>
                 </router-link>
             </div>
@@ -39,7 +41,7 @@
                 artist_name: this.$route.params.name,
                 photos: items.artists.find(m => m.url === this.$route.params.name).photos,
                 artist_names: this.get_artist_names(),
-                indices: this.get_indices()
+                indices: this.get_indices(),
             }
         },
         methods: {
@@ -71,9 +73,13 @@
                 indices.push(names[this.mod(index - 1, names.length)])
                 indices.push(names[this.mod(index + 1, names.length)])
                 return indices
-            }
-        },
-        computed: {}
+            },
+            // get_photos: function (name) {
+            //     if (items.artists.find(m => m.url === name) !== undefined) {
+            //     }
+            // },
+            // computed: {}
+        }
     }
 </script>
 
@@ -88,6 +94,7 @@
         color: #E6611B;
         border-width: 2px;
         border-color: #E6611B;
+        background-color: #FCFCFC;
     }
 
     #left {

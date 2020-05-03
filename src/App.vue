@@ -41,6 +41,7 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
+        background-color: rgba(230 ,97, 27, 0.25);
     }
 
     #collapse-button {
