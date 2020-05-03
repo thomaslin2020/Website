@@ -23,7 +23,6 @@
                 </router-link>
             </div>
         </div>
-        <!--        {{artist_names}}-->
         <div class="artist-images">
             <Photos :photos="photos"/>
         </div>
@@ -43,7 +42,7 @@
                 repository: "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/",
                 folder: "src/assets/art_exhibition/",
                 artist_name: this.$route.params.name,
-                photos: items.artists.find(m => m.url === this.$route.params.name).photos,
+                photos: this.get_photos(),
                 artist_names: this.get_artist_names(),
                 indices: this.get_indices(),
             }
@@ -78,10 +77,13 @@
                 indices.push(names[this.mod(index + 1, names.length)])
                 return indices
             },
-            // get_photos: function (name) {
-            //     if (items.artists.find(m => m.url === name) !== undefined) {
-            //     }
-            // },
+            get_photos: function () {
+                let p = items.artists.find(m => m.url === this.$route.params.name).photos
+                for (let i = 0; i < p.length; i++) {
+                    p[i] = this.repository + this.folder + this.$route.params.name + p[i]
+                }
+                return p
+            },
             // computed: {}
         }
     }
