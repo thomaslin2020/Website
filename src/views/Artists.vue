@@ -3,7 +3,7 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <router-link :to="'/art_exhibition/'+indices[0]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"> <b>{{capitalize(indices[0])}}'s
+                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
                         Art</b></p>
                     </b-button>
                 </router-link>
@@ -40,6 +40,8 @@
         components: {Photos},
         data() {
             return {
+                repository: "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/",
+                folder: "src/assets/art_exhibition/",
                 artist_name: this.$route.params.name,
                 photos: items.artists.find(m => m.url === this.$route.params.name).photos,
                 artist_names: this.get_artist_names(),
@@ -90,7 +92,8 @@
         font-size: 32px;
         margin: 0;
     }
-    .text{
+
+    .text {
         font-family: "Goudy Old Style", serif;
     }
 
