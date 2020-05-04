@@ -2,29 +2,60 @@
     <div>
         <div class="bar" style="display: flex;">
             <div id="left">
-                <router-link :to="'/art_exhibition/'+indices[0]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
-                        Art</b></p>
-                    </b-button>
-                </router-link>
+                <div v-if="windowWidth > 500">
+                    <router-link :to="'/art_exhibition/'+indices[0]">
+                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
+                            Art</b></p>
+                        </b-button>
+                    </router-link>
+                </div>
+                <div v-else>
+                    <router-link :to="'/art_exhibition/'+indices[0]">
+                        <b-button variant="outline" class="pagination-button" @click="reload">
+                            <p class="text"><b>←</b></p>
+                        </b-button>
+                    </router-link>
+                </div>
+                <br>
             </div>
+
             <div id="middle">
                 <h1>
                     {{capitalize(artist_name)}}'s Art Gallery
                 </h1>
+                <br v-if="windowWidth < 500">
             </div>
             <div id="right">
-                <router-link :to="'/art_exhibition/'+indices[1]">
-                    <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
-                        <b>{{capitalize(indices[1])}}'s
-                            Art</b>
-                    </p>
-                    </b-button>
-                </router-link>
+                <div v-if="windowWidth > 500">
+                    <router-link :to="'/art_exhibition/'+indices[1]">
+                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
+                            <b>{{capitalize(indices[1])}}'s
+                                Art</b>
+                        </p>
+                        </b-button>
+                    </router-link>
+                </div>
+                <div v-else>
+                    <router-link :to="'/art_exhibition/'+indices[1]">
+                        <b-button variant="outline" class="pagination-button" @click="reload">
+                            <p class="text"><b>→</b></p>
+                        </b-button>
+                    </router-link>
+                    <br>
+                </div>
             </div>
         </div>
         <div class="artist-images">
-            <Photos :photos="photos"/>
+            <div v-if="windowWidth > 500">
+                <Photos :photos="photos"/>
+            </div>
+            <div v-else>
+                <ul>
+                    <li v-for="photo in photos" v-bind:key="photo">
+                        <img :src="photo" :alt="photo" style="width: 100%; max-width:100%; padding-bottom: 10px;">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -95,19 +126,55 @@
         margin: 0;
     }
 
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
     .text {
-        font-family: "Goudy Old Style", serif;
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        vertical-align: middle;
+        text-align: center;
+        margin: auto;
+        font-family: "Goudy Old Style Bold", serif;
     }
 
     .pagination-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
         border-radius: 10%;
+        max-height: 40px;
         color: #E6611B;
         border-width: 2px;
         border-color: #E6611B;
         background-color: #FCFCFC;
+        text-align: center;
+    }
+
+    .pagination-button:hover {
+        color: #FCFCFC;
+        background-color: #E6611B;
+    }
+
+    .bar {
+        text-align: center;
+        position: center;
     }
 
     #left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         float: left;
         width: 25%;
     }
@@ -118,6 +185,9 @@
     }
 
     #right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         float: right;
         width: 25%;
     }
