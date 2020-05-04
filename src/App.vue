@@ -19,6 +19,7 @@
                                 <b-dropdown-item to="/award_list">Award List</b-dropdown-item>
                                 <b-dropdown-item to="/award_video">Arts Award Video</b-dropdown-item>
                             </b-nav-item-dropdown>
+                            <b-nav-item to="/art_gallery">Arts Gallery</b-nav-item>
                             <b-nav-item to="/music">Music Gallery</b-nav-item>
                             <b-nav-item to="/theatre">Theatre Gallery</b-nav-item>
                         </b-navbar-nav>
@@ -29,7 +30,7 @@
             <router-view/>
         </div>
         <footer class="page-footer font-small text-black-50 footer">
-            <div class="footer-copyright text-center py-3">© 2020 Copyright: Ridley College</div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: Ridley College. Designed by Thomas Lin, David Meng, Phoenix Gao.</div>
         </footer>
     </div>
 </template>

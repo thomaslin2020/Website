@@ -31,6 +31,11 @@ const routes = [
         component: () => import('../views/Riff.vue')
     },
     {
+        path: '/art_gallery',
+        name: 'Art Gallery',
+        component: () => import('../views/VisualArt.vue')
+    },
+    {
         path: '/award_video',
         name: 'Arts Awards Video',
         component: () => import('../views/Arts Awards.vue')

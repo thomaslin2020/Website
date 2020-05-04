@@ -117,12 +117,13 @@
                 if (items.artists.find(m => m.url === this.$route.params.name) !== undefined) {
                     let p = items.artists.find(m => m.url === this.$route.params.name).photos
                     for (let i = 0; i < p.length; i++) {
-                        p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/" + this.$route.params.name + '/' + p[i]
+                        if (!p[i].includes("https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/")) {
+                            p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/" + this.$route.params.name + '/' + p[i]
+                        }
                     }
                     return p
                 }
-            }
-            ,
+            },
             // computed: {}
         }
     }

@@ -16,7 +16,6 @@ Vue.use(VueAgile)
 Vue.use(VueMobileDetection)
 Vue.use(VueWindowSize);
 Vue.use(BootstrapVueIcons)
-Vue.component('icon', Icon)
 
 Vue.config.productionTip = false
 
