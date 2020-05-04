@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <agile :initial-slide="2">
+                    <agile>
                         <!--suppress HtmlUnknownTarget -->
                         <img class="slide"
                              v-bind:key="photo" v-for="photo in photos" :src="photo"

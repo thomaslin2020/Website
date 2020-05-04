@@ -3,14 +3,14 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <div v-if="windowWidth > 500">
-                    <router-link :to="'/art_exhibition/'+indices[0]"  style="text-decoration: none;">
+                    <router-link :to="'/art_exhibition/'+indices[0]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
                             Art</b></p>
                         </b-button>
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[0]"  style="text-decoration: none;">
+                    <router-link :to="'/art_exhibition/'+indices[0]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>←</b></p>
                         </b-button>
@@ -27,7 +27,7 @@
             </div>
             <div id="right">
                 <div v-if="windowWidth > 500">
-                    <router-link :to="'/art_exhibition/'+indices[1]"  style="text-decoration: none;">
+                    <router-link :to="'/art_exhibition/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
                             <b>{{capitalize(indices[1])}}'s
                                 Art</b>
@@ -36,7 +36,7 @@
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[1]"  style="text-decoration: none;">
+                    <router-link :to="'/art_exhibition/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>→</b></p>
                         </b-button>
@@ -75,29 +75,35 @@
                 artist_names: this.get_artist_names(),
                 indices: this.get_indices(),
             }
-        },
+        }
+        ,
         methods: {
             capitalize: function (input) {
                 return input[0].toUpperCase() + input.slice(1)
-            },
+            }
+            ,
             print_: function (input) {
                 console.log(input)
-            },
+            }
+            ,
             get_artist_names: function () {
                 let names = []
                 for (let i = 0; i < items.artists.length; i++) {
                     names.push(items.artists[i].url)
                 }
                 return names
-            },
+            }
+            ,
             mod: function (n, m) {
                 return ((n % m) + m) % m;
-            },
+            }
+            ,
             reload: function () {
                 setTimeout(function () {
                     window.location.reload()
                 }, 100)
-            },
+            }
+            ,
             get_indices: function () {
                 let indices = []
                 let names = this.get_artist_names()
@@ -105,7 +111,8 @@
                 indices.push(names[this.mod(index - 1, names.length)])
                 indices.push(names[this.mod(index + 1, names.length)])
                 return indices
-            },
+            }
+            ,
             get_photos: function () {
                 if (items.artists.find(m => m.url === this.$route.params.name) !== undefined) {
                     let p = items.artists.find(m => m.url === this.$route.params.name).photos
@@ -114,7 +121,8 @@
                     }
                     return p
                 }
-            },
+            }
+            ,
             // computed: {}
         }
     }
