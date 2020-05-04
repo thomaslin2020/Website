@@ -3,14 +3,14 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <div v-if="windowWidth > 500">
-                    <router-link :to="'/art_exhibition/'+indices[0]">
+                    <router-link :to="'/art_exhibition/'+indices[0]"  style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
                             Art</b></p>
                         </b-button>
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[0]">
+                    <router-link :to="'/art_exhibition/'+indices[0]"  style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>←</b></p>
                         </b-button>
@@ -27,7 +27,7 @@
             </div>
             <div id="right">
                 <div v-if="windowWidth > 500">
-                    <router-link :to="'/art_exhibition/'+indices[1]">
+                    <router-link :to="'/art_exhibition/'+indices[1]"  style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
                             <b>{{capitalize(indices[1])}}'s
                                 Art</b>
@@ -36,7 +36,7 @@
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[1]">
+                    <router-link :to="'/art_exhibition/'+indices[1]"  style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>→</b></p>
                         </b-button>
@@ -141,6 +141,7 @@
         /*top: 50%;*/
         /*left: 50%;*/
         /*transform: translate(-50%, -50%);*/
+        text-decoration: none;
         vertical-align: middle;
         text-align: center;
         margin: auto;
@@ -148,6 +149,7 @@
     }
 
     .pagination-button {
+        text-decoration: none !important;
         display: inline-flex;
         align-items: center;
         justify-content: center;
