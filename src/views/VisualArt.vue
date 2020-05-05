@@ -47,17 +47,18 @@
 
     .grid {
         max-width: 90%;
-        display: inline-grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         /* This is better for small screens, once min() is better supported */
         /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
         grid-gap: 1rem;
         /* This is the standardized property now, but has slightly less support */
         /* gap: 1rem */
+        margin: auto;
     }
     .parent{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
     }
 </style>
