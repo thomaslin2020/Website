@@ -11,7 +11,10 @@
                     <b-collapse id="nav-collapse" is-nav>
                         <b-navbar-nav class="ml-auto">
                             <b-nav-item to="/">Home</b-nav-item>
-                            <b-nav-item to="/art_exhibition">IB Art Exhibition</b-nav-item>
+                            <b-nav-item-dropdown text="IB Art Exhibition" right>
+                                <b-dropdown-item to="/art_video">Opening Video</b-dropdown-item>
+                                <b-dropdown-item to="/art_exhibition">Art Gallery</b-dropdown-item>
+                            </b-nav-item-dropdown>
                             <b-nav-item to="/riff">RIFF</b-nav-item>
                             <b-nav-item-dropdown text="Arts Awards 2020" right>
                                 <!--                            <b-dropdown-item to="#"></b-dropdown-item>-->
@@ -29,7 +32,7 @@
             <br>
             <router-view/>
         </div>
-        <footer class="page-footer font-small text-black-50 footer">
+        <footer class="page-footer font-small footer">
             <div class="footer-copyright text-center py-3">© 2020 Copyright: Ridley College. Designed by Thomas Lin, David Meng, Phoenix Gao.</div>
         </footer>
     </div>
@@ -87,12 +90,15 @@
     }
 
     .main-container {
-        min-height: calc(100vh - 56px);
+        min-height: calc(100vh - 60px);
     }
 
     .footer {
         background-color: rgb(248, 249, 250);
-        height: 56px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     h2 {
