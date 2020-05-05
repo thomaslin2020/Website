@@ -7,7 +7,7 @@
                         <!--suppress HtmlUnknownTarget -->
                         <img class="slide"
                              v-bind:key="photo" v-for="photo in photos" :src="photo"
-                             alt="Label">
+                             alt="Label" style="height: 44rem;">
                     </agile>
                 </div>
             </div>

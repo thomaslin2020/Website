@@ -2,7 +2,7 @@
     <div>
         <div class="bar" style="display: flex;">
             <div id="left">
-                <div v-if="windowWidth > 500">
+                <div v-if="windowWidth > 600">
                     <router-link :to="'/art_exhibition/'+indices[0]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
                             Art</b></p>
@@ -23,10 +23,10 @@
                 <h1>
                     {{capitalize(artist_name)}}'s Art Gallery
                 </h1>
-                <br v-if="windowWidth < 500">
+                <br v-if="windowWidth < 600">
             </div>
             <div id="right">
-                <div v-if="windowWidth > 500">
+                <div v-if="windowWidth > 600">
                     <router-link :to="'/art_exhibition/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
                             <b>{{capitalize(indices[1])}}'s
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="artist-images">
-            <div v-if="windowWidth > 500">
+            <div v-if="windowWidth > 600">
                 <Photos :photos="photos"/>
             </div>
             <div v-else>

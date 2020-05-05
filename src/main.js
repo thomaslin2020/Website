@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import VueWindowSize from 'vue-window-size';
 import VueMobileDetection from 'vue-mobile-detection'
 import BootstrapVueIcons from 'bootstrap-vue'
-import Icon from 'vue-awesome/components/Icon.vue'
 
 Vue.use(VS2)
 Vue.use(VueAgile)
