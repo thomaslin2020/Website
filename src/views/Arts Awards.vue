@@ -1,9 +1,11 @@
 <template>
-    <div>
+    <div class="parent">
         <div class="iframe-container">
-            <iframe src="https://www.youtube.com/embed/9lkFhNYrHCQ" allow="autoplay; encrypted-media"
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/9lkFhNYrHCQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
+        <br>
     </div>
 </template>
 

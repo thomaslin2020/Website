@@ -3,14 +3,14 @@
         <div class="bar" style="display: flex;">
             <div id="left">
                 <div v-if="windowWidth > 600">
-                    <router-link :to="'/art_exhibition/'+indices[0]" style="text-decoration: none;">
-                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{capitalize(indices[0])}}'s
-                            Art</b></p>
+                    <router-link :to="'/art_gallery/'+indices[0]" style="text-decoration: none;">
+                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{parse_grade(indices[0])}}</b>
+                        </p>
                         </b-button>
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[0]" style="text-decoration: none;">
+                    <router-link :to="'/art_gallery/'+indices[0]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>←</b></p>
                         </b-button>
@@ -21,22 +21,22 @@
 
             <div id="middle">
                 <h1>
-                    {{capitalize(artist_name)}}'s Art Gallery
+                    {{parse_grade(grade)}} Art Gallery
                 </h1>
                 <br v-if="windowWidth < 600">
             </div>
             <div id="right">
                 <div v-if="windowWidth > 600">
-                    <router-link :to="'/art_exhibition/'+indices[1]" style="text-decoration: none;">
+                    <router-link :to="'/art_gallery/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
-                            <b>{{capitalize(indices[1])}}'s
+                            <b>{{parse_grade(indices[1])}}'s
                                 Art</b>
                         </p>
                         </b-button>
                     </router-link>
                 </div>
                 <div v-else>
-                    <router-link :to="'/art_exhibition/'+indices[1]" style="text-decoration: none;">
+                    <router-link :to="'/art_gallery/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload">
                             <p class="text"><b>→</b></p>
                         </b-button>
@@ -45,9 +45,9 @@
                 </div>
             </div>
         </div>
-        <div class="artist-images">
+        <div class="grade-images">
             <div v-if="windowWidth > 600">
-                <Photos :photos="photos"/>
+                <Photos v-if="photos.length > 0" :photos="photos" :dots="false" :speed="1500" :fade="true"/>
             </div>
             <div v-else>
                 <ul>
@@ -60,68 +60,74 @@
     </div>
 </template>
 
-
 <script>
     import Photos from "../components/Photos";
-    import items from '../json/art_exhibition.json'
+    import art_gallery from '../json/art_gallery.json'
 
     export default {
         name: "Artist",
         components: {Photos},
         data() {
             return {
-                artist_name: this.$route.params.name,
+                grade: this.$route.params.grade,
                 photos: this.get_photos(),
-                artist_names: this.get_artist_names(),
+                class_names: this.get_class_names(),
                 indices: this.get_indices(),
+                shuffled: false
             }
         }
         ,
         methods: {
-            capitalize: function (input) {
-                return input[0].toUpperCase() + input.slice(1)
-            }
-            ,
+            parse_grade: function (input) {
+                if (input.includes('ib')) {
+                    return input.toUpperCase().replace('_', ' ')
+                } else if (input.includes('design')){
+                    return 'Design Technology'
+                } else{
+                    return (input[0].toUpperCase() + input.slice(1)).replace('_', ' ')
+                }
+            },
+            parse_link: function (name) {
+                name = name.replace(' ', '_')
+                name = name.toLowerCase()
+                return name
+            },
             print_: function (input) {
                 console.log(input)
-            }
-            ,
-            get_artist_names: function () {
+            },
+            get_class_names: function () {
                 let names = []
-                for (let i = 0; i < items.artists.length; i++) {
-                    names.push(items.artists[i].url)
+                for (let i = 0; i < art_gallery.grades.length; i++) {
+                    names.push(art_gallery.grades[i]["class_name"])
                 }
                 return names
-            }
-            ,
+            },
             mod: function (n, m) {
                 return ((n % m) + m) % m;
-            }
-            ,
+            },
             reload: function () {
                 setTimeout(function () {
                     window.location.reload()
                 }, 100)
-            }
-            ,
+            },
             get_indices: function () {
                 let indices = []
-                let names = this.get_artist_names()
-                let index = names.findIndex(name => name === this.$route.params.name)
-                indices.push(names[this.mod(index - 1, names.length)])
-                indices.push(names[this.mod(index + 1, names.length)])
+                let names = this.get_class_names()
+                let index = names.findIndex(name => name === this.parse_grade(this.$route.params.grade))
+                indices.push(this.parse_link(names[this.mod(index - 1, names.length)]))
+                indices.push(this.parse_link(names[this.mod(index + 1, names.length)]))
+                this.print_(indices)
                 return indices
-            }
-            ,
+            },
             get_photos: function () {
-                if (items.artists.find(m => m.url === this.$route.params.name) !== undefined) {
-                    let p = items.artists.find(m => m.url === this.$route.params.name).photos
+                let temp = art_gallery.grades.find(({class_name}) => class_name === this.parse_grade(this.$route.params.grade))
+                if (temp !== undefined) {
+                    let p = temp.images
                     for (let i = 0; i < p.length; i++) {
                         if (!p[i].includes("master")) {
-                            p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/" + this.$route.params.name + '/' + p[i]
+                            p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/" + this.$route.params.grade + '/' + p[i]
                         }
                     }
-                    this.print_(p)
                     return p
                 }
             },

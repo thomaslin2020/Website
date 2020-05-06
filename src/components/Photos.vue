@@ -3,11 +3,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <agile>
+                    <agile v-if="photos" :dots="dots" :autoplay="autoplaySpeed" :fade="fade" :speed="speed">
                         <!--suppress HtmlUnknownTarget -->
                         <img class="slide"
                              v-bind:key="photo" v-for="photo in photos" :src="photo"
-                             alt="Label" style="height: 110vh;">
+                             alt="Label">
                     </agile>
                 </div>
             </div>
@@ -18,11 +18,16 @@
 </template>
 
 <script>
+    import VueAgile from './Agile.vue'
+    import Vue from 'vue'
+
+    Vue.component('agile', VueAgile)
+
     export default {
         name: 'Photos',
-        props: ['photos'],
+        props: ['photos','dots','autoplaySpeed','fade','speed'],
         data() {
-            return{
+            return {
             }
         }
     }
@@ -31,13 +36,14 @@
 <style lang="sass">
     .section--gallery
         margin: 15px
+
         .agile
             &__nav-button
                 background: transparent
                 border: none
-                color: #fff
+                color: #000000
                 cursor: pointer
-                font-size: 24px
+                font-size: 30px
                 height: 100%
                 position: absolute
                 top: 0
@@ -46,6 +52,7 @@
 
                 &:hover
                     background-color: rgba(#000, .5)
+                    color: #fff
                     opacity: 1
 
                 &--prev
@@ -85,7 +92,8 @@
             // Slides styles
             .slide
                 display: block
-                object-fit: cover
+                object-fit: contain
                 width: 100%
+                min-height: 100vh
 
 </style>

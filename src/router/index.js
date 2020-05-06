@@ -41,6 +41,11 @@ const routes = [
         component: () => import('../views/VisualArt.vue')
     },
     {
+        path: '/art_gallery/:grade',
+        name: 'Art Gallery Grade',
+        component: () => import('../views/VisualArtGrade.vue')
+    },
+    {
         path: '/award_video',
         name: 'Arts Awards Video',
         component: () => import('../views/Arts Awards.vue')
