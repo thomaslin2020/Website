@@ -1,10 +1,16 @@
 <template>
-    <div></div>
+    <div>
+        {{this.$route.params.event}}
+    </div>
 </template>
 
 <script>
     export default {
-        name: "MusicEvents"
+        name: "MusicEvents",
+        data() {
+            return {}
+        },
+        methods: {}
     }
 </script>
 
