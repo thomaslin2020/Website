@@ -15,6 +15,7 @@ Vue.use(VueWindowSize);
 Vue.use(BootstrapVueIcons)
 
 Vue.config.productionTip = false
+Vue.prototype.$static = 'https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/'
 
 new Vue({
     router,

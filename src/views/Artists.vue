@@ -118,7 +118,7 @@
                     let p = items.artists.find(m => m.url === this.$route.params.name).photos
                     for (let i = 0; i < p.length; i++) {
                         if (!p[i].includes("master")) {
-                            p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/art_exhibition/" + this.$route.params.name + '/' + p[i]
+                            p[i] = this.$static + "art_exhibition/" + this.$route.params.name + '/' + p[i]
                         }
                     }
                     this.print_(p)

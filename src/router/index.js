@@ -59,11 +59,22 @@ const routes = [
         path: '/music',
         name: 'Music Gallery',
         component: () => import('../views/Music.vue')
-    }, {
+    },
+    {
+        path: '/music/:event',
+        name: 'Music Events',
+        component: () => import('../views/MusicEvents.vue')
+    },
+    {
         path: '/theatre',
         name: 'Theatre Gallery',
         component: () => import('../views/Theatre.vue')
-    }
+    },
+    {
+        path: '/theatre/:events',
+        name: 'TheatreEvents',
+        component: () => import('../views/TheatreEvents.vue')
+    },
 ]
 
 const router = new VueRouter({

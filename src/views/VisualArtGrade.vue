@@ -125,7 +125,7 @@
                     let p = temp.images
                     for (let i = 0; i < p.length; i++) {
                         if (!p[i].includes("master")) {
-                            p[i] = "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/" + this.$route.params.grade + '/' + p[i]
+                            p[i] = this.$static + "visual_arts/" + this.$route.params.grade + '/' + p[i]
                         }
                     }
                     return p
