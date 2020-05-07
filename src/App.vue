@@ -32,9 +32,12 @@
             <br>
             <router-view/>
         </div>
-        <footer class="page-footer font-small footer">
-            <div class="footer-copyright text-center py-3">© 2020 Copyright: Ridley College. Designed by Thomas Lin, David Meng, Phoenix Gao.</div>
-        </footer>
+        <router-link to="/about" class="footer-link" style="text-decoration: none; color: inherit;">
+            <footer class="page-footer font-small footer">
+                <div class="footer-copyright text-center footer-text">
+                </div>
+            </footer>
+        </router-link>
     </div>
 </template>
 
@@ -92,6 +95,12 @@
     .main-container {
         min-height: calc(100vh - 60px);
     }
+    /*.footer-text{*/
+    /*    display: inline-flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    transition: .2s;*/
+    /*}*/
 
     .footer {
         background-color: rgb(248, 249, 250);
@@ -99,6 +108,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        transition: .25s;
+    }
+
+    .footer:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+    .footer:after {
+        content: "© 2020 Copyright: Ridley College. Designed by Thomas Lin, David Meng, Phoenix Gao."
+    }
+
+    .footer:hover:after {
+        content: "About Us!"
     }
 
     h2 {

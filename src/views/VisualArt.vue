@@ -52,10 +52,13 @@
         padding: 20px; /* Some padding */
     }
 
-    .zoom-container:hover {
-        transform: scale(1.5);
-        background: rgba(0, 0, 0, 0); /* Black background with 0.3 opacity */
+    .zoom-container {
+        transition: transform .2s;
+    }
 
+    .zoom-container:hover {
+        transform: scale(1.21);
+        background: rgba(0, 0, 0, 0); /* Black background with 0.3 opacity */
     }
 
     h1 {

@@ -1,8 +1,11 @@
 <template>
     <div class="parent">
         <div class="iframe-container">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/9lkFhNYrHCQ" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            <iframe v-if="windowWidth > 1200" width="640" height="360" src="https://www.youtube.com/embed/9lkFhNYrHCQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://www.youtube.com/embed/9lkFhNYrHCQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
                     allowfullscreen></iframe>
         </div>
         <br>
@@ -30,6 +33,5 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
     }
 </style>
