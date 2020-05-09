@@ -2,7 +2,7 @@
   <div class="about">
     <h1>About Us</h1>
      <div id ="left">
-          <h2>Ridley College Web Developers</h2>
+          <h2>Ridley College Web Developers 😀</h2>
      </div>
      <br><br><br>
       <div class="container"> 
