@@ -16,6 +16,8 @@ Vue.use(BootstrapVueIcons)
 
 Vue.config.productionTip = false
 Vue.prototype.$static = 'https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/'
+Vue.prototype.$email = 'arts_gallery@ridleycollege.com'
+Vue.prototype.$password = 'Arts12345#'
 
 new Vue({
     router,
