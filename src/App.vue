@@ -3,28 +3,26 @@
         <div class="main-container">
             <div id="nav">
                 <b-navbar id="nav_bar" toggleable="md" type="light" variant="light">
-                    <b-navbar-brand to="/">
+                    <b-navbar-brand to="/art_exhibition">
                         <img src="https://d3gec4yjx788g8.cloudfront.net/platform/3282/assets/logo.png"
                              style="max-width: 250px;" alt="Logo"/>
                     </b-navbar-brand>
                     <b-navbar-toggle id="collapse-button" target="nav-collapse"></b-navbar-toggle>
                     <b-collapse id="nav-collapse" is-nav>
                         <b-navbar-nav class="ml-auto">
-                            <b-nav-item to="/">Home</b-nav-item>
+<!--                            <b-nav-item to="/">Home</b-nav-item>-->
                             <b-nav-item-dropdown text="IB Art Exhibition" right>
                                 <b-dropdown-item to="/art_video">Opening Video</b-dropdown-item>
                                 <b-dropdown-item to="/art_exhibition">Art Gallery</b-dropdown-item>
                             </b-nav-item-dropdown>
                             <b-nav-item to="/riff">RIFF</b-nav-item>
-                            <b-nav-item-dropdown text="Arts Awards 2020" right>
-                                <!--                            <b-dropdown-item to="#"></b-dropdown-item>-->
-                                <!--                            <b-dropdown-divider/>-->
-                                <b-dropdown-item to="/award_list">Award List</b-dropdown-item>
-                                <b-dropdown-item to="/award_video">Arts Award Video</b-dropdown-item>
-                            </b-nav-item-dropdown>
-                            <b-nav-item to="/art_gallery">Arts Gallery</b-nav-item>
-                            <b-nav-item to="/music">Music Gallery</b-nav-item>
-                            <b-nav-item to="/theatre">Theatre Gallery</b-nav-item>
+<!--                            <b-nav-item-dropdown text="Arts Awards 2020" right>-->
+<!--                                <b-dropdown-item to="/award_list">Award List</b-dropdown-item>-->
+<!--                                <b-dropdown-item to="/award_video">Arts Award Video</b-dropdown-item>-->
+<!--                            </b-nav-item-dropdown>-->
+<!--                            <b-nav-item to="/art_gallery">Arts Gallery</b-nav-item>-->
+<!--                            <b-nav-item to="/music">Music Gallery</b-nav-item>-->
+<!--                            <b-nav-item to="/theatre">Theatre Gallery</b-nav-item>-->
                         </b-navbar-nav>
                     </b-collapse>
                 </b-navbar>
