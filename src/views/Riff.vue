@@ -1,5 +1,6 @@
 <template>
     <div class="parent">
+        <h1>Ridley Film Festival</h1>
         <div class="iframe-container">
             <iframe v-if="windowWidth > 1200" width="640" height="360" src="https://www.youtube.com/embed/FmtFuy2o99E" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: calc(100vh - 175px);"
