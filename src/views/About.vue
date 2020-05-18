@@ -1,49 +1,102 @@
 <template>
-  <div class="about">
-    <h1>About Us</h1>
-     <div id ="left">
-          <h2>Ridley College Web Developers</h2>
-     </div>
-     <br><br><br>
-      <div class="container"> 
-                <div class="card-group"> 
-                  <div class="row">
-     <div class="card col-md-4">
-       <img class="card-img-top" src = "https://news.efinancialcareers.com/binaries/content/gallery/efinancial-careers/articles/2019/03/programmer.jpg" style=" height:250px">
-    Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he. 
-             </div>
-      <div class="card col-md-4">
-       <img class="card-img-top" src = "https://www.pixelproductionsinc.com/wp-content/uploads/2019/02/A-Beginners-Guide-to-Becoming-a-Computer-Programmer.jpg" style=" height:250px">
-       Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets. Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose. 
-     </div>
-      <div class ="card col-md-4">
-       <img class="card-img-top" src = "data:image/jpeg;base64,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" style=" height:250px">
-         Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he. 
-     </div>
-
-                  </div>
+    <div class="about">
+        <h1>About Us</h1>
+        <h3 style="margin-bottom: 15px;">Ridley College Web Developers</h3>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div style="max-width: 80%;">
+                <div style="background-color: rgba(255,255,255,0.4); border-radius: 10px; padding: 20px;">
+                    <p style="margin-bottom: 0">This site was a collaborative effort between Ridley Arts teachers and senior Ridley students. The
+                        objective of this site is to showcase the 2019-2020 academic year in terms of arts activities
+                        and
+                        arts events at the school. Due to the school shutdown due to Covid 19, this virtual display was
+                        the
+                        only means by which to celebrate student achievement this year.
+                        We welcome your input.</p>
+                    <b-container deck class="card_container">
+                        <b-row :cols="cols">
+                            <b-card img-src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4447514_144.jpg"
+                                    img-alt="Card image" style="width: 40%; min-width: 30%; margin-top: 15px;"
+                                    class="artist_card mx-auto h-100"
+                                    img-top>
+                                <b-card-text class="card_text">
+                                    <div style="text-align: center; vertical-align: center;">
+                                        <p class="names">
+                                            <b>Thomas Lin</b>
+                                        </p>
+                                    </div>
+                                </b-card-text>
+                            </b-card>
+                            <b-card img-src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4811747_810.jpg"
+                                    img-alt="Card image" style="width: 40%; min-width: 30%; margin-top: 15px;"
+                                    class="artist_card mx-auto h-100"
+                                    img-top>
+                                <b-card-text class="card_text">
+                                    <div style="text-align: center; vertical-align: center;">
+                                        <p class="names">
+                                            <b>David Meng</b>
+                                        </p>
+                                    </div>
+                                </b-card-text>
+                            </b-card>
+                        </b-row>
+                    </b-container>
                 </div>
-      </div>
-                <br><br><br>
-
-     
-  </div>
+            </div>
+        </div>
+        <br>
+    </div>
 </template>
 <script>
-export default {
-  
-}
+    export default {
+        data() {
+            return {
+                cols: 2,
+                width: document.documentElement.clientWidth
+            }
+        },
+        methods: {
+            getWindowWidth() {
+                console.log(document.documentElement.clientWidth)
+                this.width = document.documentElement.clientWidth;
+            }, getCols() {
+                let num = this.width
+                if (num < 500) {
+                    this.cols = 1;
+                } else {
+                    this.cols = 2;
+                }
+            }
+        },
+        mounted() {
+            window.addEventListener('resize', this.getWindowWidth);
+            window.addEventListener('resize', this.getCols);
+            this.$nextTick(function () {
+                this.getWindowWidth()
+                this.getCols()
+            })
+        },
+
+    }
 </script>>
 <style scoped>
- #left {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        float: left;
-        /* width: 25%; */
+    .card_container {
+        max-width: 80%;
+        overflow: hidden;
     }
-.texts{
-text-align: center;
-}
+
+    .card_text {
+        max-height: 15px;
+        min-height: 15px;
+        word-wrap: break-word;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .names {
+        margin: auto;
+        vertical-align: middle;
+        font-size: 18px;
+    }
 </style>

@@ -66,7 +66,6 @@
         },
         beforeDestroy() {
             window.removeEventListener('resize', this.getWindowWidth);
-            window.removeEventListener('resize', this.getWindowHeight);
         }
     }
 </script>
