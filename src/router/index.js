@@ -17,17 +17,17 @@ const routes = [
     },
     {
         path: '/art_exhibition',
-        name: 'IB Art Exhibition',
+        name: 'IBArtExhibition',
         component: () => import('../views/Art Exhibition.vue')
     },
     {
         path: '/art_exhibition/:name',
-        name: 'IB Art Exhibition Artists',
+        name: 'IBArtExhibitionArtists',
         component: () => import('../views/Artists.vue')
     },
     {
         path: '/art_video',
-        name: 'IB Art Video',
+        name: 'IBArtVideo',
         component: () => import('../views/ArtVideo.vue')
     },
     {
@@ -37,37 +37,37 @@ const routes = [
     },
     {
         path: '/art_gallery',
-        name: 'Art Gallery',
+        name: 'ArtGallery',
         component: () => import('../views/VisualArt.vue')
     },
     {
         path: '/art_gallery/:grade',
-        name: 'Art Gallery Grade',
+        name: 'ArtGalleryGrade',
         component: () => import('../views/VisualArtGrade.vue')
     },
     {
         path: '/award_video',
-        name: 'Arts Awards Video',
+        name: 'ArtsAwardsVideo',
         component: () => import('../views/Arts Awards.vue')
     },
     {
         path: '/award_list',
-        name: 'Arts Awards List',
+        name: 'ArtsAwardsList',
         component: () => import('../views/Award List.vue')
     },
     {
         path: '/music',
-        name: 'Music Gallery',
+        name: 'MusicGallery',
         component: () => import('../views/Music.vue')
     },
     {
         path: '/music/:event',
-        name: 'Music Events',
+        name: 'MusicEvents',
         component: () => import('../views/MusicEvents.vue')
     },
     {
         path: '/theatre',
-        name: 'Theatre Gallery',
+        name: 'TheatreGallery',
         component: () => import('../views/Theatre.vue')
     },
     {
