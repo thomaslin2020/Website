@@ -25,11 +25,11 @@
     import items from '../json/art_exhibition.json'
 
     export default {
-        name: "Art Exhibition",
+        name: "ArtExhibition",
         data() {
             return {
                 artists: items.artists,
-                windowWidth: 500,
+                width: 500,
                 cols: 5
             }
         },
@@ -44,12 +44,11 @@
         },
 
         methods: {
-            getWindowWidth(event) {
+            getWindowWidth() {
                 console.log(document.documentElement.clientWidth)
-                this.windowWidth = document.documentElement.clientWidth;
-                this.$emit(event, this.windowWidth)
-            }, getCols(event) {
-                let num = this.windowWidth
+                this.width = document.documentElement.clientWidth;
+            }, getCols() {
+                let num = this.width
                 if (num < 420) {
                     this.cols = 1;
                 } else if (num > 1000) {
@@ -61,7 +60,6 @@
                 } else {
                     this.cols = 2;
                 }
-                this.$emit(event, this.cols)
             }
         },
         beforeDestroy() {
