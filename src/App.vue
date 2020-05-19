@@ -107,7 +107,7 @@
     /*}*/
 
     .footer {
-        background-color: rgb(248, 249, 250);
+        background-color: rgb(242, 242, 242);
         height: 60px;
         display: flex;
         flex-direction: column;
@@ -116,7 +116,7 @@
     }
 
     .footer:hover {
-        background-color: rgb(200, 200, 200);
+        background-color: rgb(242, 242, 242);
     }
 
     .footer:after {
