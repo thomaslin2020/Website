@@ -47,7 +47,7 @@
         </div>
         <div class="artist-images">
             <div v-if="windowWidth > 600">
-                <Photos :photos="photos"/>
+                <Photos :photos="photos" :fade="true" :speed="750"/>
             </div>
             <div v-else>
                 <ul>
