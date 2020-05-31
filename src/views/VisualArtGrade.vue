@@ -4,7 +4,7 @@
             <div id="left">
                 <div v-if="windowWidth > 600">
                     <router-link :to="'/art_gallery/'+indices[0]" style="text-decoration: none;">
-                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{parse_grade(indices[0])}}</b>
+                        <b-button variant="outline" class="pagination-button" @click="reload"><p class="text"><b>{{parse_event(indices[0])}}</b>
                         </p>
                         </b-button>
                     </router-link>
@@ -21,7 +21,7 @@
 
             <div id="middle">
                 <h1>
-                    {{parse_grade(grade)}} Art Gallery
+                    {{parse_event(event)}} Art Gallery
                 </h1>
                 <br v-if="windowWidth < 600">
             </div>
@@ -29,7 +29,7 @@
                 <div v-if="windowWidth > 600">
                     <router-link :to="'/art_gallery/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
-                            <b>{{parse_grade(indices[1])}}'s
+                            <b>{{parse_event(indices[1])}}'s
                                 Art</b>
                         </p>
                         </b-button>
@@ -98,7 +98,7 @@
             get_class_names: function () {
                 let names = []
                 for (let i = 0; i < art_gallery.grades.length; i++) {
-                    names.push(art_gallery.grades[i]["class_name"])
+                    names.push(art_gallery.grades[i]["event"])
                 }
                 return names
             },
@@ -120,7 +120,7 @@
                 return indices
             },
             get_photos: function () {
-                let temp = art_gallery.grades.find(({class_name}) => class_name === this.parse_grade(this.$route.params.grade))
+                let temp = art_gallery.grades.find(({event}) => event === this.parse_grade(this.$route.params.grade))
                 if (temp !== undefined) {
                     let p = temp.images
                     for (let i = 0; i < p.length; i++) {

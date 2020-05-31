@@ -41,7 +41,7 @@ const routes = [
         component: () => import('../views/VisualArt.vue')
     },
     {
-        path: '/art_gallery/:grade',
+        path: '/art_gallery/:event',
         name: 'ArtGalleryGrade',
         component: () => import('../views/VisualArtGrade.vue')
     },

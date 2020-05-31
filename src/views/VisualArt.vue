@@ -1,12 +1,12 @@
 <template>
     <div class="parent">
         <div class="grid" style="padding-bottom: 20px">
-            <div class="image-container" v-for="{class_name} in art_grades" v-bind:key="class_name">
-                <router-link :to="'/art_gallery/'+parse_link(class_name)">
+            <div class="image-container" v-for="{event} in art_grades" v-bind:key="event">
+                <router-link :to="'/art_gallery/'+parse_link(event)">
                     <div class="zoom-container">
                         <img src="https://dummyimage.com/1920x1080/000/fff" alt="Grade" style="width:100%;">
                         <div class="content">
-                            <h1>{{class_name}}</h1>
+                            <h1>{{event}}</h1>
                         </div>
                     </div>
                 </router-link>
