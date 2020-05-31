@@ -1,12 +1,12 @@
 <template>
     <div class="parent">
         <div class="grid" style="padding-bottom: 20px">
-            <div class="image-container" v-for="{event} in art_grades" v-bind:key="event">
-                <router-link :to="'/art_gallery/'+parse_link(event)">
+            <div class="image-container" v-for="event in art_grades" v-bind:key="event">
+                <router-link :to="'/art_gallery/'+parse_link(event.class_name)">
                     <div class="zoom-container">
                         <img src="https://dummyimage.com/1920x1080/000/fff" alt="Grade" style="width:100%;">
                         <div class="content">
-                            <h1>{{event}}</h1>
+                            <h1>{{event.class_name}}</h1>
                         </div>
                     </div>
                 </router-link>
@@ -27,10 +27,13 @@
         },
         methods: {
             parse_link: function (name) {
-                name = name.replace(' ', '_')
+                name = name.replace(/ /g, '_')
                 name = name.toLowerCase()
                 return name
             }
+        },
+        mounted() {
+            console.log(this.art_grades)
         }
     }
 </script>

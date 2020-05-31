@@ -22,9 +22,15 @@
                                 <b-dropdown-item to="/award_list">Award List</b-dropdown-item>
                                 <b-dropdown-item to="/award_video">Arts Award Video</b-dropdown-item>
                             </b-nav-item-dropdown>
-                            <b-nav-item to="/art_gallery">Arts Gallery</b-nav-item>
+                            <b-nav-item-dropdown text="Arts Gallery" right>
+                                <b-dropdown-item to="/art_gallery">Visual Arts</b-dropdown-item>
+                                <b-dropdown-item to="/media">Media Arts</b-dropdown-item>
+                            </b-nav-item-dropdown>
                             <b-nav-item to="/music">Music Gallery</b-nav-item>
-                            <b-nav-item to="/theatre">Theatre Gallery</b-nav-item>
+                            <b-nav-item-dropdown text="Theatre Gallery" right>
+                                <b-dropdown-item to="/theatre">Theatre Gallery</b-dropdown-item>
+                                <b-dropdown-item to="/theatre_ib2">IB2 Theatre</b-dropdown-item>
+                            </b-nav-item-dropdown>
                         </b-navbar-nav>
                     </b-collapse>
                 </b-navbar>

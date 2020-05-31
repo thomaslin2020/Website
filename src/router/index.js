@@ -40,10 +40,16 @@ const routes = [
         name: 'ArtGallery',
         component: () => import('../views/VisualArt.vue')
     },
+
     {
-        path: '/art_gallery/:event',
+        path: '/art_gallery/:grade',
         name: 'ArtGalleryGrade',
         component: () => import('../views/VisualArtGrade.vue')
+    },
+    {
+        path: '/media',
+        name: 'MediaArt',
+        component: () => import('../views/MediaArt.vue')
     },
     {
         path: '/award_video',
@@ -75,6 +81,11 @@ const routes = [
         name: 'TheatreEvents',
         component: () => import('../views/TheatreEvents.vue')
     },
+    {
+        path: '/theatre_ib2',
+        name: 'IB2Theatre',
+        component: () => import('../views/IB2 Theatre.vue')
+    }
 ]
 
 const router = new VueRouter({
