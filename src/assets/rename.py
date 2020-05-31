@@ -10,7 +10,7 @@ def natural_keys(text):
     return [atoi(c) for c in re.split(r'(\d+)', text)]
 
 
-directory = '/Users/thomaslin/Documents/GitHub/ridley-arts/src/assets/art_exhibition/'
+directory = '/Users/thomaslin/Downloads/2020 website/untitled folder'
 fs = os.listdir(directory)
 fs = [i for i in fs if not i.endswith('.DS_Store') and not i.endswith('.py')]
 for i in fs:
@@ -19,7 +19,7 @@ for i in fs:
     data.sort(key=natural_keys)
     data = [i for i in data if not i.endswith('.DS_Store')]
     print(data)
-    num = [str(d) + '.png' for d in range(1, len(data) + 1)]
+    num = [str(d) + '.jpg' for d in range(1, len(data) + 1)]
     for j, k in zip(data, num):
         os.rename(os.path.join(dy, j), os.path.join(dy, k))
 
