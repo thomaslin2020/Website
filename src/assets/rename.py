@@ -24,3 +24,10 @@ for i in fs:
         os.rename(os.path.join(dy, j), os.path.join(dy, k))
 
     print(num)
+
+
+def g(num):
+    import subprocess
+    data = str([str(d) + '.jpg' for d in range(1, num + 1)])
+    subprocess.run("pbcopy", universal_newlines=True, input=data)
+    print(data)
