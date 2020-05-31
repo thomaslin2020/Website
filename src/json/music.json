@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "event": "9 Lessons and Carole",
+      "event": "9 Lessons And Carole",
       "thumbnail": "",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
     },
@@ -19,11 +19,6 @@
       "event": "Christmas Concert",
       "thumbnail": "",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
-    },
-    {
-      "event": "Fairy Tale Christmas Carole",
-      "thumbnail": "",
-      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "event": "Lower School Musical",

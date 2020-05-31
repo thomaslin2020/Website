@@ -71,7 +71,7 @@ const routes = [
         component: () => import('../views/Theatre.vue')
     },
     {
-        path: '/theatre/:events',
+        path: '/theatre/:event',
         name: 'TheatreEvents',
         component: () => import('../views/TheatreEvents.vue')
     },
