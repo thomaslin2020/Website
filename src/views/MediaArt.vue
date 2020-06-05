@@ -52,7 +52,7 @@
                 }, 100)
             },
             get_photos: function () {
-                let p = media.photos
+                let p = media.slides
                 for (let i = 0; i < p.length; i++) {
                     if (!p[i].includes("master")) {
                         p[i] = this.$static + "media_arts/" + p[i]
