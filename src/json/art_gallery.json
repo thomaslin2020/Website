@@ -3,7 +3,7 @@
     {
       "class_name": "Kindergarten",
       "thumbnail": "",
-      "images": []
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg"]
     },
     {
       "class_name": "Grade 1",
@@ -353,24 +353,9 @@
       ]
     },
     {
-      "class_name": "IB 1",
-      "thumbnail": "",
-      "images": []
-    },
-    {
       "class_name": "Grade 12",
       "thumbnail": "",
-      "images": []
-    },
-    {
-      "class_name": "IB 2",
-      "thumbnail": "",
-      "images": []
-    },
-    {
-      "class_name": "Design Technology",
-      "thumbnail": "",
-      "images": []
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
     }
   ]
 }
