@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <agile v-if="photos" :dots="dots" :autoplaySpeed="autoplaySpeed" :fade="fade" :speed="speed" :autoplay="autoplay">
+                    <agile v-if="photos" :dots="dots" :autoplay="autoplaySpeed" :fade="fade" :speed="speed">
                         <!--suppress HtmlUnknownTarget -->
                         <img class="slide"
                              v-bind:key="photo" v-for="photo in photos" :src="photo"
@@ -25,7 +25,7 @@
 
     export default {
         name: 'Photos',
-        props: ['photos','dots','autoplaySpeed','fade','speed','autoplay'],
+        props: ['photos','dots','autoplaySpeed','fade','speed'],
         data() {
             return {
             }
