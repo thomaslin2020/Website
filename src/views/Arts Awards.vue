@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: "Arts Awards Video"
+        name: "ArtsAwardsVideo"
     }
 </script>
 
