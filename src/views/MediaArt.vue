@@ -4,7 +4,7 @@
             <div id="left"></div>
             <div id="middle">
                 <h1>
-                    Arts Awards
+                    Media Arts
                 </h1>
                 <br v-if="windowWidth < 600">
             </div>
@@ -12,12 +12,12 @@
         </div>
         <div class="grade-images">
             <div v-if="windowWidth > 600">
-                <Photos v-if="slides.length > 0" :photos="slides" :dots="false" :speed="1500" :fade="true"/>
+                <Photos v-if="photos.length > 0" :photos="photos" :dots="false" :speed="1500" :fade="true"/>
             </div>
             <div v-else>
                 <ul>
-                    <li v-for="slide in slides" v-bind:key="slide">
-                        <img :src="slide" :alt="slide" style="width: 100%; max-width:100%; padding-bottom: 10px;">
+                    <li v-for="photo in photos" v-bind:key="photo">
+                        <img :src="photo" :alt="photo" style="width: 100%; max-width:100%; padding-bottom: 10px;">
                     </li>
                 </ul>
             </div>
@@ -27,14 +27,14 @@
 
 <script>
     import Photos from "../components/Photos";
-    import awards from '../json/awards.json'
+    import media from '../json/media.json'
 
     export default {
-        name: "Award",
+        name: "MediaArt",
         components: {Photos},
         data() {
             return {
-                slides: this.get_slides(),
+                photos: this.get_photos(),
                 shuffled: false
             }
         }
@@ -51,17 +51,17 @@
                     window.location.reload()
                 }, 100)
             },
-            get_slides: function () {
-                let p = awards.slides
+            get_photos: function () {
+                let p = media.slides
                 for (let i = 0; i < p.length; i++) {
                     if (!p[i].includes("master")) {
-                        p[i] = this.$static + "awards/" + p[i]
+                        p[i] = this.$static + "media_arts/" + p[i]
                     }
                 }
                 return p
             },
             mounted() {
-                console.log(this.slides)
+                console.log(this.photos)
             }
         }
     }

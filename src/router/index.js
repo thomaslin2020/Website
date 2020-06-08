@@ -46,11 +46,11 @@ const routes = [
         name: 'ArtGalleryGrade',
         component: () => import('../views/VisualArtGrade.vue')
     },
-    // {
-    //     path: '/media',
-    //     name: 'MediaArt',
-    //     component: () => import('../views/MediaArt.vue')
-    // },
+    {
+        path: '/media',
+        name: 'MediaArt',
+        component: () => import('../views/MediaArt.vue')
+    },
     {
         path: '/award_video',
         name: 'ArtsAwardsVideo',
