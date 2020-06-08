@@ -131,9 +131,7 @@
                     return p
                 }
             },
-            mounted(){
-                console.log(this.grade)
-            }
+            // computed: {}
         }
     }
 </script>
