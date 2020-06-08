@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +7,7 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: Home
+        component: import('../views/Home.vue')
     },
     {
         path: '/about',
@@ -40,10 +39,16 @@ const routes = [
         name: 'ArtGallery',
         component: () => import('../views/VisualArt.vue')
     },
+
     {
         path: '/art_gallery/:grade',
         name: 'ArtGalleryGrade',
         component: () => import('../views/VisualArtGrade.vue')
+    },
+    {
+        path: '/media',
+        name: 'MediaArt',
+        component: () => import('../views/MediaArt.vue')
     },
     {
         path: '/award_video',
@@ -71,10 +76,15 @@ const routes = [
         component: () => import('../views/Theatre.vue')
     },
     {
-        path: '/theatre/:events',
+        path: '/theatre/:event',
         name: 'TheatreEvents',
         component: () => import('../views/TheatreEvents.vue')
     },
+    {
+        path: '/theatre_ib2',
+        name: 'IB2Theatre',
+        component: () => import('../views/IB2 Theatre.vue')
+    }
 ]
 
 const router = new VueRouter({
