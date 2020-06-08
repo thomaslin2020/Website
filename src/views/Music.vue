@@ -27,7 +27,7 @@
         },
         methods: {
             parse_link: function (name) {
-                name = name.replace(' ', '_').toLowerCase()
+                name = name.replace(/ /g, '_').toLowerCase()
                 return name
             }
         }
