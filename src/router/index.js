@@ -81,11 +81,11 @@ const routes = [
         name: 'TheatreEvents',
         component: () => import('../views/TheatreEvents.vue')
     },
-    // {
-    //     path: '/theatre_ib2',
-    //     name: 'IB2Theatre',
-    //     component: () => import('../views/IB2 Theatre.vue')
-    // }
+    {
+        path: '/theatre_ib2',
+        name: 'IB2Theatre',
+        component: () => import('../views/IB2 Theatre.vue')
+    }
 ]
 
 const router = new VueRouter({
