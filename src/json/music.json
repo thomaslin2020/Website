@@ -2,32 +2,32 @@
   "events": [
     {
       "event": "9 Lessons And Carole",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/9_lessons_and_carole/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
     },
     {
       "event": "Amnesty Concert",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/amnesty_concert/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "event": "Cadet Band",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/cadet_band/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
     },
     {
       "event": "Christmas Concert",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/christmas_concert/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
     },
     {
       "event": "Lower School Musical",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/lower_school_musical/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "event": "Upper School Ensembles",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/upper_school_ensembles/jazz.jpg",
       "images": ["jazz.jpg", "symphony.jpg"]
     }
   ]

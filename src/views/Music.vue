@@ -1,12 +1,13 @@
 <template>
     <div class="parent">
         <div class="grid" style="padding-bottom: 20px">
-            <div class="image-container" v-for="{event : event} in events" v-bind:key="event">
-                <router-link :to="'/music/'+parse_link(event)">
+            <div class="image-container" v-for="event in events" v-bind:key="event">
+                <router-link :to="'/music/'+parse_link(event.event)">
                     <div class="zoom-container">
-                        <img src="https://dummyimage.com/1920x1080/000/fff" alt="Event" style="width:100%;">
+                        <!--suppress HtmlUnknownTarget -->
+                        <img :src="event.thumbnail" alt="Event" style="width:100%; height: 200px;">
                         <div class="content">
-                            <h1>{{event}}</h1>
+                            <h1 style="align-self: flex-end">{{event.event}}</h1>
                         </div>
                     </div>
                 </router-link>
@@ -48,6 +49,8 @@
         background: rgba(0, 0, 0, 0.25); /* Black background with 0.3 opacity */
         color: #f1f1f1; /* Grey text */
         width: 100%; /* Full width */
+        display: grid;
+        height: 100%;
         padding: 20px; /* Some padding */
     }
 

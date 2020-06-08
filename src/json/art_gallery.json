@@ -2,12 +2,12 @@
   "grades": [
     {
       "class_name": "Kindergarten",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/kindergarten/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg"]
     },
     {
       "class_name": "Grade 1",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_1/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -28,7 +28,7 @@
     },
     {
       "class_name": "Grade 2",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_2/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -45,7 +45,7 @@
     },
     {
       "class_name": "Grade 3",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_3/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -66,7 +66,7 @@
     },
     {
       "class_name": "Grade 4",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_4/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -90,7 +90,7 @@
     },
     {
       "class_name": "Grade 5",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_5/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -112,17 +112,17 @@
     },
     {
       "class_name": "Grade 6",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_6/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg", "30.jpg", "31.jpg"]
     },
     {
       "class_name": "Grade 7",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_7/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg", "30.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg"]
     },
     {
       "class_name": "Grade 8",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_8/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -181,7 +181,7 @@
     },
     {
       "class_name": "Grade 9",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_9/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -252,7 +252,7 @@
     },
     {
       "class_name": "Grade 10",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_10/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -286,7 +286,7 @@
     },
     {
       "class_name": "Grade 11",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_11/1.jpg",
       "images": [
         "1.jpg",
         "2.jpg",
@@ -301,7 +301,7 @@
     },
     {
       "class_name": "Grade 12",
-      "thumbnail": "",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_12/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
     }
   ]
