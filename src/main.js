@@ -15,7 +15,7 @@ Vue.use(VueWindowSize);
 Vue.use(BootstrapVueIcons)
 
 Vue.config.productionTip = false
-Vue.prototype.$static = 'https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/'
+Vue.prototype.$static = 'https://raw.githubusercontent.com/ridley-college/ridley-arts-celebration/master/src/assets/'
 Vue.prototype.$email = 'arts_gallery@ridleycollege.com'
 Vue.prototype.$password = 'Arts12345#'
 
