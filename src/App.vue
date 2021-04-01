@@ -52,11 +52,13 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        background-image: url("./assets/mainbackground.jpg");
+        /* background-image: url("./assets/mainbackground.jpg"); */
         background-repeat: no-repeat;
         background-position: center; /* Center the image */
         background-size: cover; /* Resize the background image to cover the entire container */
-        /*background-color: rgba(230, 97, 27, 0.25);*/
+        /* background-color: rgba(230, 97, 27, 0.25);
+         */
+         background-color:rgba(242,242,242);
     }
 
     h1 {
@@ -111,7 +113,7 @@
     /*}*/
 
     .footer {
-        background-color: rgb(242, 242, 242);
+        background-color: rgb(201, 198, 198);
         height: 60px;
         display: flex;
         flex-direction: column;
