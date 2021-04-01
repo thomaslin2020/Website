@@ -52,11 +52,12 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        background-image: url("./assets/mainbackground.jpg");
+        /* background-image: url("./assets/mainbackground.jpg"); */
         background-repeat: no-repeat;
         background-position: center; /* Center the image */
         background-size: cover; /* Resize the background image to cover the entire container */
         /*background-color: rgba(230, 97, 27, 0.25);*/
+        background-color: #F2F2F2;
     }
 
     h1 {
