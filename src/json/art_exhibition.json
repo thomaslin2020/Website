@@ -41,27 +41,6 @@
       "last_name": "Teta",
       "url": "Miranda",
       "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg"]
-    },
-    {
-      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4840960_689.jpg",
-      "first_name": "(Alex) Mario",
-      "last_name": "Vera Esparza",
-      "url": "alex",
-      "photos": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png","11.png","12.png"]
-    },
-    {
-      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3935606_503.jpg",
-      "first_name": "Amelia",
-      "last_name": "Winterbottom",
-      "url": "amelia",
-      "photos": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"]
-    },
-    {
-      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_3848470_997.jpg",
-      "first_name": "(Kevin) Guangyu",
-      "last_name": "Zhang",
-      "url": "kevin",
-      "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg"]
     }
   ]
 }
