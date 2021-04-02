@@ -15,6 +15,7 @@
                                 <b-dropdown-item to="/art_video">Opening Video</b-dropdown-item>
                                 <b-dropdown-item to="/art_exhibition">Art Gallery</b-dropdown-item>
                             </b-nav-item-dropdown>
+                            <b-nav-item to="/design_tech">Design Technology</b-nav-item>
                             <b-nav-item to="/riff">RIFF</b-nav-item>
                             <b-nav-item-dropdown text="Arts Awards 2020" right>
                                 <b-dropdown-item to="/award_list">Award List</b-dropdown-item>

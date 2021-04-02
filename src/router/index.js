@@ -84,6 +84,16 @@ const routes = [
         path: '/theatre_ib2',
         name: 'IB2Theatre',
         component: () => import('../views/IB2 Theatre.vue')
+    },
+    {
+        path:'/design_tech',
+        name:'DesignTech',
+        component: () => import('../views/Design.vue')
+    },
+    {
+        path:'/design_tech/:grade',
+        name:'DesignTechGrade',
+        component: () => import('../views/Designs.vue')
     }
 ]
 
