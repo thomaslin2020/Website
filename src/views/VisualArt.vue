@@ -28,6 +28,10 @@
         },
         methods: {
             parse_link: function (name) {
+                if(name.includes('/')){
+                    name=name.replace('/', ':')
+                }
+
                 name = name.replace(/ /g, '_')
                 name = name.toLowerCase()
                 return name

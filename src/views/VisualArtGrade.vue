@@ -83,10 +83,26 @@
                 } else if (input.includes('design')){
                     return 'Design Technology'
                 } else{
-                    return (input[0].toUpperCase() + input.slice(1)).replace('_', ' ')
+                    input=input.replace(':','/')
+                    var array = input.split('_')
+                    var output=''
+                    for (var i = 0; i < array.length; i++) {
+                        var c= array[i]
+                        
+                        c= c[0].toUpperCase()+c.slice(1)
+                        output+=c
+                        if(i!=(array.length-1)){
+                            output+=' '
+                        }
+                    }
+                                        return output
+                    // return (input[0].toUpperCase() + input.slice(1)).replace(/_/g, ' ')
                 }
             },
             parse_link: function (name) {
+                if(name.includes('/')){
+                    name=name.replace('/', ':')
+                }
                 name = name.replace(/ /g, '_')
                 name = name.toLowerCase()
                 return name
