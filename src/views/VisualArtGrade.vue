@@ -29,8 +29,7 @@
                 <div v-if="windowWidth > 600">
                     <router-link :to="'/art_gallery/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
-                            <b>{{parse_grade(indices[1])}}'s
-                                Art</b>
+                            <b>{{parse_grade(indices[1])}}</b>
                         </p>
                         </b-button>
                     </router-link>
