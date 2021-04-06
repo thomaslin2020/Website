@@ -21,7 +21,7 @@
 
             <div id="middle">
                 <h1>
-                    {{parse_grade(grade)}} Art Gallery
+                    {{parse_grade(grade)}} Gallery
                 </h1>
                 <br v-if="windowWidth < 600">
             </div>

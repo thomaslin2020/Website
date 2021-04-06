@@ -30,9 +30,9 @@ const routes = [
         component: () => import('../views/ArtVideo.vue')
     },
     {
-        path: '/riff',
-        name: 'RIFF',
-        component: () => import('../views/Riff.vue')
+        path: '/film',
+        name: 'Film',
+        component: () => import('../views/Film.vue')
     },
     {
         path: '/art_gallery',

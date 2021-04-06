@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>IB Visual Art Galleries</h1>
+        <h1>IB2 Visual Art Galleries</h1>
         <b-container deck class="card_container">
             <b-row :cols="this.cols">
                 <b-card v-bind:key="artist.image" :img-src="artist.image" img-alt="Card image" v-for="artist in artists"
