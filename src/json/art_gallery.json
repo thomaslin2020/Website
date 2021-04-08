@@ -417,6 +417,22 @@
         "13.jpeg",
         "14.jpeg"
       ]
+    },
+    {
+      "class_name": "Grade 12",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/visual_arts/grade_12/1.jpeg",
+      "images": [
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg",
+        "4.jpeg",
+        "5.jpeg",
+        "6.jpeg",
+        "7.jpeg",
+        "8.jpeg",
+        "9.jpeg",
+        "10.jpeg"
+      ]
     }
   ]
 }
