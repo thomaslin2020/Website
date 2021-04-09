@@ -41,6 +41,27 @@
       "last_name": "Teta",
       "url": "Miranda",
       "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg"]
+    },
+    {
+      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4318805_658.jpg?resize=8100,8100",
+      "first_name": "(Henry) Feidong",
+      "last_name": "Song",
+      "url": "Henry",
+      "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg"]
+    },
+    {
+      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4525150_606.jpg?resize=8100,8100",
+      "first_name": "(Matt) Chengkai",
+      "last_name": "Xue",
+      "url": "Matt",
+      "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"]
+    },
+    {
+      "image": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/user/large_user_4404490_931.jpg?resize=8100,8100",
+      "first_name": "(Marie) Jose Marie",
+      "last_name": "Omulen",
+      "url": "Marie",
+      "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg","10.jpeg"]
     }
   ]
 }
