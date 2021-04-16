@@ -51,11 +51,7 @@
             <div v-else>
                 <ul>
                     <li v-for="photo in photos" v-bind:key="photo">
-<<<<<<< HEAD
-                        <img :src="photo" :alt="photo" style="width: 100%; max-width:100%; padding-bottom: 10px;">
-=======
                         <img :src="photo" :alt="photo" style="width: 100%; max-width:100%; padding-bottom: 10px;" v-if="photo.includes('jpg')">
->>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
                     </li>
                 </ul>
             </div>

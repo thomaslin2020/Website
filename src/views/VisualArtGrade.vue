@@ -21,11 +21,7 @@
 
             <div id="middle">
                 <h1>
-<<<<<<< HEAD
-                    {{parse_grade(grade)}} Art Gallery
-=======
                     {{parse_grade(grade)}} Gallery
->>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
                 </h1>
                 <br v-if="windowWidth < 600">
             </div>
@@ -33,12 +29,7 @@
                 <div v-if="windowWidth > 600">
                     <router-link :to="'/art_gallery/'+indices[1]" style="text-decoration: none;">
                         <b-button variant="outline" class="pagination-button" @click="reload"><p class="text">
-<<<<<<< HEAD
-                            <b>{{parse_grade(indices[1])}}'s
-                                Art</b>
-=======
                             <b>{{parse_grade(indices[1])}}</b>
->>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
                         </p>
                         </b-button>
                     </router-link>
@@ -92,12 +83,6 @@
                 } else if (input.includes('design')){
                     return 'Design Technology'
                 } else{
-<<<<<<< HEAD
-                    return (input[0].toUpperCase() + input.slice(1)).replace('_', ' ')
-                }
-            },
-            parse_link: function (name) {
-=======
                     input=input.replace(':','/')
                     var array = input.split('_')
                     var output=''
@@ -118,7 +103,6 @@
                 if(name.includes('/')){
                     name=name.replace('/', ':')
                 }
->>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
                 name = name.replace(/ /g, '_')
                 name = name.toLowerCase()
                 return name
