@@ -1,34 +1,218 @@
 {
   "events": [
     {
-      "event": "9 Lessons And Carols",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/9_lessons_and_carols/1.jpg",
-      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+      "event": "Kindergarten",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/kindergarten/1.jpg",
+      "images": ["1.jpg", "2.jpg", "3.jpg"]
     },
     {
-      "event": "Amnesty Concert",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/amnesty_concert/1.jpg",
-      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+      "event": "Grade 1",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_1/1.png",
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png",
+        "8.png",
+        "9.png",
+        "10.png",
+        "11.png",
+        "12.png",
+        "13.png",
+        "14.png",
+        "15.png"
+      ]
     },
     {
-      "event": "Cadet Band",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/cadet_band/1.jpg",
-      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+      "event": "Grade 2",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_2/1.jpg",
+      "images": [
+          "1.jpg",
+          "2.jpg",
+          "3.jpg",
+          "4.jpg",
+          "5.jpg",
+          "6.jpg",
+          "7.jpg",
+          "8.jpg",
+          "9.jpg",
+          "10.jpg",
+          "11.jpg",
+          "12.jpg",
+          "13.jpg",
+          "14.jpg",
+          "15.jpg",
+          "16.jpg",
+          "17.jpg",
+          "18.jpg",
+          "19.jpg",
+          "20.jpg",
+          "21.jpg",
+          "22.jpg"
+      ]
     },
     {
-      "event": "Christmas Concert",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/christmas_concert/1.jpg",
+      "event": "Grade 3",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_3/1.jpg",
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg","8.jpg","9.jpg"]
+    },
+    {
+      "event": "Grade 4",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_4/1.jpg",
       "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
     },
     {
-      "event": "Lower School Musical",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/lower_school_musical/1.jpg",
-      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+      "event": "Grade 5",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_5/1.jpg",
+      "images": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg"
+      ]
     },
     {
-      "event": "Upper School Ensembles",
-      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/upper_school_ensembles/jazz.jpg",
-      "images": ["jazz.jpg", "symphony.jpg"]
-    }
+      "event": "Grade 6",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_6/1.jpg",
+      "images": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg"
+      ]
+    },
+    {
+      "event": "Grade 7",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_7/1.jpg",
+      "images": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg",
+        "19.jpg"
+      ]
+    },
+    {
+      "event": "Grade 8",
+      "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/grade_8/1.jpg",
+      "images": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg",
+        "19.jpg",
+        "20.jpg",
+        "21.jpg",
+        "22.jpg",
+        "23.jpg",
+        "24.jpg",
+        "25.jpg",
+        "26.jpg"
+      ]
+    },
+    {"event": "Chapel",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/chapel/1.jpg",
+    "images": [
+      "1.jpg",
+      "2.jpg",
+      "3.jpg",
+      "4.jpg",
+      "5.jpg",
+      "6.jpg",
+      "7.jpg",
+      "8.jpg",
+      "10.jpg",
+      "11.jpg",
+      "12.jpg",
+      "13.jpg",
+      "14.jpg",
+      "15.jpg",
+      "16.jpg",
+      "17.jpg",
+      "18.jpg",
+      "19.jpg",
+      "20.jpg",
+      "21.jpg",
+      "22.jpg",
+      "23.jpg",
+      "24.jpg",
+      "25.jpg",
+      "26.jpg",
+      "27.jpg",
+      "28.jpg",
+      "29.jpg",
+      "30.jpg",
+      "31.jpg",
+      "32.jpg",
+      "33.jpg",
+      "34.jpg",
+      "35.jpg",
+      "36.jpg",
+      "37.jpg",
+      "38.jpg"
+    ]
+  },
+  {
+    "event": "Choir",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/choir/1.mp4",
+    "images": [
+      "1.mp4",
+      "2.mp4",
+      "3.mp4",
+      "4.mp4",
+      "5.mp4" 
+    ]
+  },
+  {
+    "event": "Cadet Band",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/cadet_band/1.jpg",
+    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg","8.jpg","9.jpg"]
+  }
   ]
 }

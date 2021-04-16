@@ -30,9 +30,15 @@ const routes = [
         component: () => import('../views/ArtVideo.vue')
     },
     {
+<<<<<<< HEAD
         path: '/riff',
         name: 'RIFF',
         component: () => import('../views/Riff.vue')
+=======
+        path: '/film',
+        name: 'Film',
+        component: () => import('../views/Film.vue')
+>>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
     },
     {
         path: '/art_gallery',
@@ -84,6 +90,19 @@ const routes = [
         path: '/theatre_ib2',
         name: 'IB2Theatre',
         component: () => import('../views/IB2 Theatre.vue')
+<<<<<<< HEAD
+=======
+    },
+    {
+        path:'/design_tech',
+        name:'DesignTech',
+        component: () => import('../views/Design.vue')
+    },
+    {
+        path:'/design_tech/:grade',
+        name:'DesignTechGrade',
+        component: () => import('../views/Designs.vue')
+>>>>>>> 812c40ecfe581ca06ff3b448511f363a2183456f
     }
 ]
 

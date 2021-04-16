@@ -5,7 +5,7 @@
                 <router-link :to="'/music/'+parse_link(event.event)">
                     <div class="zoom-container">
                         <!--suppress HtmlUnknownTarget -->
-                        <img :src="event.thumbnail" alt="Event" style="width:100%; height: 200px;">
+                        <img :src="event.thumbnail" alt="Event" style="width:100%; height: 200px; object-fit: contain">
                         <div class="content">
                             <h1 style="align-self: flex-end">{{event.event}}</h1>
                         </div>
