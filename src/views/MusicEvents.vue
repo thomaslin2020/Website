@@ -46,8 +46,90 @@
         </div>
         <div class="grade-images">
             <div v-if="windowWidth > 600">
-                <div v-if ="event=='choir'">
-                </div>
+                <div v-if ="event=='jazz_band'">
+    <div class="parent">
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/nHiUpYwyV2s"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/nHiUpYwyV2s" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/7sOFUqqOnNE"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/7sOFUqqOnNE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    </div>
+                    <div v-if ="event=='orchestra'">
+                         <div class="parent">
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/Vk8kvryEpy0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/Vk8kvryEpy0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/z1MIenmfT58"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/z1MIenmfT58" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/9dWxxFl6664"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/9dWxxFl6664" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/MqDdDVaKBrY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/MqDdDVaKBrY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="iframe-container">
+            <iframe v-if="windowWidth > 600" width="640" height="360" src="https://youtu.be/embed/XJTb7dzjqCY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    style="height: calc(100vh - 175px);"
+                    allowfullscreen></iframe>
+            <iframe v-else width="640" height="360" src="https://youtu.be/embed/XJTb7dzjqCY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: 100%"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+                    </div>
                 <div v-else>
                 <Photos v-if="photos.length > 0" :photos="photos" :dots="false" :speed="1500" :fade="true"/>
                 </div>

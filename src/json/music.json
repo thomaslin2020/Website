@@ -199,10 +199,15 @@
     ]
   },
   {
-    "event": "Choir",
-    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/choir/1.jpg",
+    "event": "Jazz Band",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/jazz_band/1.jpg",
     "images": [
-      
+    ]
+  },
+  {
+    "event": "Orchestra",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/orchestra/1.jpg",
+    "images": [
     ]
   },
   {

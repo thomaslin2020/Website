@@ -24,10 +24,10 @@
         name: "IB2Theatre",
         data() {
             return {
-                videos: ["https://www.youtube.com/embed/kWf3fSDpCSY",
-                    "https://www.youtube.com/embed/9gAO_6MdQyg",
-                    "https://www.youtube.com/embed/cGRHlwpZ4_Y",
-                    "https://www.youtube.com/embed/m9pOxZLIckg"]
+                videos: ["https://youtu.be/7Wj_fQSLS64",
+"https://youtu.be/TaVYPUAtocA",
+"https://youtu.be/uDAyt6yKqqU"
+]
             }
         }
     }
