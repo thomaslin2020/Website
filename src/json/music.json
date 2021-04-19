@@ -200,13 +200,9 @@
   },
   {
     "event": "Choir",
-    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/choir/1.mp4",
+    "thumbnail": "https://raw.githubusercontent.com/thomaslin2020/ridley-arts-celebration/master/src/assets/music/choir/1.jpg",
     "images": [
-      "1.mp4",
-      "2.mp4",
-      "3.mp4",
-      "4.mp4",
-      "5.mp4" 
+      
     ]
   },
   {

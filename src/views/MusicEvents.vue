@@ -46,7 +46,11 @@
         </div>
         <div class="grade-images">
             <div v-if="windowWidth > 600">
+                <div v-if ="event=='choir'">
+                </div>
+                <div v-else>
                 <Photos v-if="photos.length > 0" :photos="photos" :dots="false" :speed="1500" :fade="true"/>
+                </div>
             </div>
             <div v-else>
                 <ul>
